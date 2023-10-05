@@ -1,7 +1,19 @@
+import Image from "next/image";
+
 function PokemonCard() {
   return (
-    <div className="border-4 rounded-xl border-neutral-700 min-w-[15rem] w-[23.5rem] h-[28rem]   bg-neutral-900 text-white shadow-inner shadow-neutral-950 hover:scale-110 transition-all relative">
-      <div className="bg-pattern mix-blend-overlay rounded-xl bg-repeat w-full h-full text-white absolute" />
+    <div className="border-4 rounded-xl border-green-700 min-w-[15rem] w-[23.5rem] h-[28rem] bg-pattern text-white hover:scale-110 transition-all relative shadow-pattern">
+        <div className="p-4 w-full flex flex-col items-center justify-center h-full">
+          <Image
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"
+            alt="Bulbasaur"
+            width={250}
+            height={250}
+          />
+          <h1 className="text-3xl font-bold">Bulbasaur</h1>
+          <p className="text-2xl text-green-400">Grass</p>
+          <p className="text-2xl text-purple-400">Poison</p>
+        </div>
     </div>
   );
 }
