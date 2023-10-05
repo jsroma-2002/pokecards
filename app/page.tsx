@@ -8,10 +8,9 @@ export default function Home() {
         <AppBar />
       </header>
       <section className="p-8 w-full flex flex-row flex-wrap gap-8 justify-center">
-        <PokemonCard />
-        <PokemonCard />
-        <PokemonCard />
-        <PokemonCard />
+        <PokemonCard image="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" name="Venusaur" mainType="grass" secondaryType="poison" />
+        <PokemonCard image="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" name="Charizard" mainType="fire" secondaryType="flying" />
+        <PokemonCard image="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png" name="Blastoise" mainType="water" secondaryType="none" />
       </section>
     </main>
   );
